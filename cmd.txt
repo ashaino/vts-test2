@@ -1,0 +1,4 @@
+aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 197295423253.dkr.ecr.us-west-2.amazonaws.com
+docker build -t vts-test2 .
+docker tag vts-test2:latest 197295423253.dkr.ecr.us-west-2.amazonaws.com/vts-test2:latest
+docker push 197295423253.dkr.ecr.us-west-2.amazonaws.com/vts-test2:latest
