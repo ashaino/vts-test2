@@ -1,0 +1,7 @@
+services:
+  app:
+    container_name: vts-test2
+    build: .
+#    restart: always
+    ports:
+      - 80:8080
