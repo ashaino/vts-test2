@@ -1,4 +1,3 @@
 FROM nginxdemos/nginx-hello:latest
-RUN mkdir /data
-COPY . /data
+COPY ./dummy.txt /
 EXPOSE 8080
